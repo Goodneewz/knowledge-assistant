@@ -1,0 +1,5 @@
+Mama Tee's Bakery - Payment Methods
+
+We accept bank transfer, card payment through a Paystack link, and cash on pickup.
+After a bank transfer, send a screenshot of the receipt on WhatsApp so we can confirm your order.
+We do not accept cheques or cryptocurrency.
