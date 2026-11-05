@@ -20,10 +20,10 @@ def ask(messages, system="You are a helpful assistant.", temperature=0.2):
     data = r.json()
     return data["candidates"][0]["content"]["parts"][0]["text"], data["usageMetadata"]
 
-def ask_with_retry(messages, tries=3):
+def ask_with_retry(messages, system="You are a helpful assistant.", temperature=0.2, tries=3):
     for attempt in range(tries):
         try:
-            return ask(messages)
+            return ask(messages, system, temperature)
         except requests.exceptions.HTTPError as e:
             code = e.response.status_code
             if code not in (429, 500, 503) or attempt == tries - 1:
