@@ -40,18 +40,19 @@ def test():
     print("Cosine tests passed")
 
 
-test()
-chunks = json.loads(Path("chunks_embedded.json").read_text(encoding="utf-8"))
-questions = [
-    "How long do refunds take?",
-    "Can I order a cake for my wedding?",
-    "Do you have vegan options?",
-    "Do you deliver to Abuja?",
-    "What time do you close on Sunday?",
-    "Who owns the bakery?",
-    "Do you sell wedding dresses?",
-]
-for question in questions:
-    print("\nQ:", question)
-    for score, chunk in top_k(question, chunks):
-        print(f"  {score:.3f}  {chunk['id']}  {chunk['text'][:60]}")
+if __name__ == "__main__":
+    test()
+    chunks = json.loads(Path("chunks_embedded.json").read_text(encoding="utf-8"))
+    questions = [
+        "How long do refunds take?",
+        "Can I order a cake for my wedding?",
+        "Do you have vegan options?",
+        "Do you deliver to Abuja?",
+        "What time do you close on Sunday?",
+        "Who owns the bakery?",
+        "Do you sell wedding dresses?",
+    ]
+    for question in questions:
+        print("\nQ:", question)
+        for score, chunk in top_k(question, chunks):
+            print(f"  {score:.3f}  {chunk['id']}  {chunk['text'][:60]}")
