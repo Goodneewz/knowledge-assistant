@@ -1,0 +1,52 @@
+[
+  {
+    "id": "01_opening_hours-0",
+    "source": "01_opening_hours.txt",
+    "text": "Mama Tee's Bakery - Opening Hours\n\nWe are open Monday to Saturday from 8:00 AM to 7:00 PM. On Sundays we open from 12:00 PM to 6:00 PM.\nWe are closed on public holidays, with one exception: on Christmas Eve we open from 8:00 AM to 3:00 PM.\nCustom cake orders can be collected at any time during opening hours."
+  },
+  {
+    "id": "02_menu_and_prices-0",
+    "source": "02_menu_and_prices.txt",
+    "text": "Mama Tee's Bakery - Menu and Prices\n\nMeat pie: N1,500. Sausage roll: N1,200. Chin chin (small bag): N2,000. Zobo drink: N1,000.\nCupcakes, box of 6: N6,500.\nBirthday cakes (plain vanilla): 8-inch costs N18,000 and 10-inch costs N26,000.\nFondant decoration adds N5,000 to any cake. Prices may change with notice on our WhatsApp page."
+  },
+  {
+    "id": "03_custom_cakes-0",
+    "source": "03_custom_cakes.txt",
+    "text": "Mama Tee's Bakery - Custom Cake Orders\n\nCustom cakes need at least 5 days notice. Tiered and wedding cakes need at least 7 days notice.\nTo confirm an order, we collect a 50% deposit. The balance is paid on pickup or before delivery.\nDesign changes are free until 48 hours before pickup. After that we cannot change the design."
+  },
+  {
+    "id": "04_delivery-0",
+    "source": "04_delivery.txt",
+    "text": "Mama Tee's Bakery - Delivery\n\nWe deliver within Lagos only. Delivery to Lagos Mainland costs N2,500. Delivery to Lagos Island costs N4,000.\nDelivery is free for orders above N50,000.\nPlace your order before 11:00 AM for same-day delivery. We do not deliver on Sundays."
+  },
+  {
+    "id": "05_refunds_and_returns-0",
+    "source": "05_refunds_and_returns.txt",
+    "text": "Mama Tee's Bakery - Refunds and Returns\n\nFresh baked goods cannot be returned. If your order arrives damaged or wrong, send a photo within 2 hours of delivery.\nWe will then offer a replacement or a refund. Approved refunds are paid within 3 working days to your original payment method.\nCake deposits are refundable only if you cancel at least 72 hours before pickup. Later cancellations forfeit the deposit."
+  },
+  {
+    "id": "06_allergens-0",
+    "source": "06_allergens.txt",
+    "text": "Mama Tee's Bakery - Allergen Information\n\nOur products contain wheat, eggs and milk. Our kitchen also handles peanuts and tree nuts, so we cannot guarantee any item is nut-free.\nWe do not currently offer vegan or gluten-free products.\nPlease tell us about allergies when you order, and we will advise you honestly."
+  },
+  {
+    "id": "07_payments-0",
+    "source": "07_payments.txt",
+    "text": "Mama Tee's Bakery - Payment Methods\n\nWe accept bank transfer, card payment through a Paystack link, and cash on pickup.\nAfter a bank transfer, send a screenshot of the receipt on WhatsApp so we can confirm your order.\nWe do not accept cheques or cryptocurrency."
+  },
+  {
+    "id": "08_contact-0",
+    "source": "08_contact.txt",
+    "text": "Mama Tee's Bakery - Contact Us\n\nWhatsApp: +234 800 000 0000. Email: hello@mamatees.example.\nShop address: 12 Sample Street, Surulere, Lagos.\nWe reply to messages within 2 hours during opening hours."
+  },
+  {
+    "id": "09_loyalty_program-0",
+    "source": "09_loyalty_program.txt",
+    "text": "Mama Tee's Bakery - Sweet Points Loyalty Program\n\nEarn 1 Sweet Point for every N1,000 you spend. Collect 50 points to get N2,500 off your next order.\nPoints expire 12 months after you earn them. Points cannot be combined with discount codes."
+  },
+  {
+    "id": "10_catering-0",
+    "source": "10_catering.txt",
+    "text": "Mama Tee's Bakery - Catering for Events\n\nWe cater events for 30 guests or more. The minimum catering order is N150,000. Please book at least 14 days ahead.\nA tasting session costs N5,000, and this amount is deducted from your final bill if you book with us.\nSetup is included for events inside Lagos."
+  }
+]
