@@ -12,3 +12,7 @@ r.raise_for_status()
 for m in r.json()["models"]:
     if "embedContent" in m.get("supportedGenerationMethods", []):
         print(m["name"])
+    #if "generateContent" in m.get("supportedGenerationMethods", []):
+    #    print(m["name"])
+    
+    
