@@ -3,7 +3,7 @@ import re
 from pathlib import Path
 
 
-def chunk_by_sentences(text, max_chars=400):
+def chunk_by_sentences(text, max_chars=300):
     text = " ".join(text.split())
     sentences = re.split(r'(?<=[.!?])\s+', text)
     chunks = []
@@ -33,7 +33,7 @@ test()
 all_chunks = []
 for path in sorted(Path("docs").glob("*.txt")):
     text = path.read_text(encoding="utf-8")
-    for i, piece in enumerate(chunk_by_sentences(text, 400)):
+    for i, piece in enumerate(chunk_by_sentences(text, 300)):
         all_chunks.append({"id": f"{path.stem}-{i}", "source": path.name, "text": piece})
 
 Path("chunks_v2.json").write_text(json.dumps(all_chunks, indent=2), encoding="utf-8")

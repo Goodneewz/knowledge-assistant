@@ -2,17 +2,32 @@
   {
     "id": "01_opening_hours-0",
     "source": "01_opening_hours.txt",
-    "text": "Mama Tee's Bakery - Opening Hours: We are open Monday to Saturday from 8:00 AM to 7:00 PM. On Sundays we open from 12:00 PM to 6:00 PM. We are closed on public holidays, with one exception: on Christmas Eve we open from 8:00 AM to 3:00 PM. Custom cake orders can be collected at any time during opening hours."
+    "text": "Mama Tee's Bakery - Opening Hours: We are open Monday to Saturday from 8:00 AM to 7:00 PM. On Sundays we open from 12:00 PM to 6:00 PM. We are closed on public holidays, with one exception: on Christmas Eve we open from 8:00 AM to 3:00 PM."
+  },
+  {
+    "id": "01_opening_hours-1",
+    "source": "01_opening_hours.txt",
+    "text": "Custom cake orders can be collected at any time during opening hours."
   },
   {
     "id": "02_menu_and_prices-0",
     "source": "02_menu_and_prices.txt",
-    "text": "Mama Tee's Bakery - Menu and Prices: Meat pie: N1,500. Sausage roll: N1,200. Chin chin (small bag): N2,000. Zobo drink: N1,000. Cupcakes, box of 6: N6,500. Birthday cakes (plain vanilla): 8-inch costs N18,000 and 10-inch costs N26,000. Fondant decoration adds N5,000 to any cake. Prices may change with notice on our WhatsApp page."
+    "text": "Mama Tee's Bakery - Menu and Prices: Meat pie: N1,500. Sausage roll: N1,200. Chin chin (small bag): N2,000. Zobo drink: N1,000. Cupcakes, box of 6: N6,500. Birthday cakes (plain vanilla): 8-inch costs N18,000 and 10-inch costs N26,000. Fondant decoration adds N5,000 to any cake."
+  },
+  {
+    "id": "02_menu_and_prices-1",
+    "source": "02_menu_and_prices.txt",
+    "text": "Prices may change with notice on our WhatsApp page."
   },
   {
     "id": "03_custom_cakes-0",
     "source": "03_custom_cakes.txt",
-    "text": "Mama Tee's Bakery - Custom Cake Orders: Custom cakes need at least 5 days notice. Tiered and wedding cakes need at least 7 days notice. To confirm an order, we collect a 50% deposit. The balance is paid on pickup or before delivery. Design changes are free until 48 hours before pickup. After that we cannot change the design."
+    "text": "Mama Tee's Bakery - Custom Cake Orders: Custom cakes need at least 5 days notice. Tiered and wedding cakes need at least 7 days notice. To confirm an order, we collect a 50% deposit. The balance is paid on pickup or before delivery. Design changes are free until 48 hours before pickup."
+  },
+  {
+    "id": "03_custom_cakes-1",
+    "source": "03_custom_cakes.txt",
+    "text": "After that we cannot change the design."
   },
   {
     "id": "04_delivery-0",
@@ -22,17 +37,22 @@
   {
     "id": "05_refunds_and_returns-0",
     "source": "05_refunds_and_returns.txt",
-    "text": "Mama Tee's Bakery - Refunds and Returns: Fresh baked goods cannot be returned. If your order arrives damaged or wrong, send a photo within 2 hours of delivery. We will then offer a replacement or a refund. Approved refunds are paid within 3 working days to your original payment method. Cake deposits are refundable only if you cancel at least 72 hours before pickup."
+    "text": "Mama Tee's Bakery - Refunds and Returns: Fresh baked goods cannot be returned. If your order arrives damaged or wrong, send a photo within 2 hours of delivery. We will then offer a replacement or a refund. Approved refunds are paid within 3 working days to your original payment method."
   },
   {
     "id": "05_refunds_and_returns-1",
     "source": "05_refunds_and_returns.txt",
-    "text": "Later cancellations forfeit the deposit."
+    "text": "Cake deposits are refundable only if you cancel at least 72 hours before pickup. Later cancellations forfeit the deposit."
   },
   {
     "id": "06_allergens-0",
     "source": "06_allergens.txt",
-    "text": "Mama Tee's Bakery - Allergen Information: Our products contain wheat, eggs and milk. Our kitchen also handles peanuts and tree nuts, so we cannot guarantee any item is nut-free. We do not currently offer vegan or gluten-free products. Please tell us about allergies when you order, and we will advise you honestly."
+    "text": "Mama Tee's Bakery - Allergen Information: Our products contain wheat, eggs and milk. Our kitchen also handles peanuts and tree nuts, so we cannot guarantee any item is nut-free. We do not currently offer vegan or gluten-free products."
+  },
+  {
+    "id": "06_allergens-1",
+    "source": "06_allergens.txt",
+    "text": "Please tell us about allergies when you order, and we will advise you honestly."
   },
   {
     "id": "07_payments-0",
