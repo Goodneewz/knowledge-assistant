@@ -48,6 +48,8 @@ questions = [
     "Do you have vegan options?",
     "Do you deliver to Abuja?",
     "What time do you close on Sunday?",
+    "Who owns the bakery?",
+    "Do you sell wedding dresses?",
 ]
 for question in questions:
     print("\nQ:", question)
