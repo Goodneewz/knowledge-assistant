@@ -18,7 +18,9 @@ def ask(messages, system="You are a helpful assistant.", temperature=0.2):
     r = requests.post(URL, json=body, headers={"x-goog-api-key": API_KEY}, timeout=60)
     r.raise_for_status()
     data = r.json()
-    return data["candidates"][0]["content"]["parts"][0]["text"], data["usageMetadata"]
+    parts = data["candidates"][0]["content"]["parts"]
+    text = "".join(p.get("text", "") for p in parts)
+    return text, data["usageMetadata"]
 
 def ask_with_retry(messages, system="You are a helpful assistant.", temperature=0.2, tries=3):
     for attempt in range(tries):
@@ -36,14 +38,14 @@ def ask_with_retry(messages, system="You are a helpful assistant.", temperature=
         time.sleep(2 ** attempt * 3)
 
 
-messages = [{"role": "user", "parts": [{"text": "Hi"}]}]
-text, usage = ask_with_retry(messages)
+#messages = [{"role": "user", "parts": [{"text": "Hi"}]}]
+#text, usage = ask_with_retry(messages)
 # print(text)
-print(usage)
+#print(usage)
 
-messages.append({"role": "model", "parts": [{"text": text}]})
-messages.append({"role": "user", "parts": [{"text": "What is my name?"}]})
-print(ask_with_retry(messages)[0])
+#messages.append({"role": "model", "parts": [{"text": text}]})
+#messages.append({"role": "user", "parts": [{"text": "What is my name?"}]})
+#print(ask_with_retry(messages)[0])
 
 if __name__ == "__main__":
     messages = []
