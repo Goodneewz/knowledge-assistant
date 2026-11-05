@@ -45,31 +45,32 @@ messages.append({"role": "model", "parts": [{"text": text}]})
 messages.append({"role": "user", "parts": [{"text": "What is my name?"}]})
 print(ask_with_retry(messages)[0])
 
-messages = []
-print("Type 'quit' to exit, 'reset' to forget.")
+if __name__ == "__main__":
+    messages = []
+    print("Type 'quit' to exit, 'reset' to forget.")
 
-while True:
-    user_text = input("You: ")
-    if user_text == "quit":
-        break
-    if user_text == "reset":
-        messages = []
-        print("Memory cleared.")
-        continue
-    messages.append({"role": "user", "parts": [{"text": user_text}]})
-    # TODO 1: if user_text is "quit", stop the loop
-    # TODO 2: if user_text is "reset", empty messages and continue
-    # TODO 3: append the user's message to messages
+    while True:
+        user_text = input("You: ")
+        if user_text == "quit":
+            break
+        if user_text == "reset":
+            messages = []
+            print("Memory cleared.")
+            continue
+        messages.append({"role": "user", "parts": [{"text": user_text}]})
+        # TODO 1: if user_text is "quit", stop the loop
+        # TODO 2: if user_text is "reset", empty messages and continue
+        # TODO 3: append the user's message to messages
 
-    try:
-        text, usage = ask_with_retry(messages)
-    except Exception as e:
-        print("Something went wrong:", e)
-        if hasattr(e, "response") and e.response is not None:
-            print(e.response.text)
-        messages.pop()   # TODO 4: undo the user message
-        continue
-    # TODO 5: print the reply, then print usage["totalTokenCount"]
-    print(text)
-    print(usage["totalTokenCount"])
-    # TODO 6: append {"role": "model", "parts": [{"text": text}]} to messages
+        try:
+            text, usage = ask_with_retry(messages)
+        except Exception as e:
+            print("Something went wrong:", e)
+            if hasattr(e, "response") and e.response is not None:
+                print(e.response.text)
+            messages.pop()   # TODO 4: undo the user message
+            continue
+        # TODO 5: print the reply, then print usage["totalTokenCount"]
+        print(text)
+        print(usage["totalTokenCount"])
+        # TODO 6: append {"role": "model", "parts": [{"text": text}]} to messages
