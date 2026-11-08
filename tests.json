@@ -1,0 +1,9 @@
+[
+  {"q": "How long do refunds take?", "should_refuse": false, "expect": "3 working days"},
+  {"q": "Can I order a cake for my wedding?", "should_refuse": false, "expect": "7 days"},
+  {"q": "Do you have vegan options?", "should_refuse": false, "expect": "not"},
+  {"q": "Do you deliver to Abuja?", "should_refuse": false, "expect": "Lagos"},
+  {"q": "What time do you close on Sunday?", "should_refuse": false, "expect": "6:00 PM"},
+  {"q": "Who owns the bakery?", "should_refuse": true},
+  {"q": "Do you sell wedding dresses?", "should_refuse": true}
+]
