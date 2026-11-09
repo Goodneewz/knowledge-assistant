@@ -5,4 +5,7 @@
 | v3, 20 tests | 11 of 14 | 3 | 0 |
 | v4, 20 tests | 12 of 14 | 2 | 0 |
 
-Changed v1 to v2 to v3 to v4 eval baseline: Raise top_k from 3 to 5, plus 20 worked example.
+Changed v1 to v2 to v3 to v4 eval baseline: 
+- v2: rule 3 allows logical conclusions, plus one worked example.
+- v3: first 20-test baseline. 3 false refusals, all retrieval problems.
+- v4: top_k raised from 3 to 5. Fixed "extra to change design." Still failing: "only make cakes" (prompt problem now) and "shop located" (retrieval problem).
