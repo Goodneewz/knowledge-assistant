@@ -18,7 +18,7 @@ chunks = json.loads(Path("chunks_embedded.json").read_text(encoding="utf-8"))
 
 
 def answer(question):
-    hits = top_k(question, chunks, k=3)
+    hits = top_k(question, chunks, k=5)
     context = "\n".join(f"[{c['id']}] {c['text']}" for score, c in hits)
     messages = [{"role": "user", "parts": [{"text": f"CONTEXT:\n{context}\n\nQUESTION: {question}"}]}]
     text, usage = ask_with_retry(messages, system=SYSTEM, temperature=0)
