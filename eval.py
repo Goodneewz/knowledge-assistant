@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 from rag import answer
+import time
 
 REFUSAL = "I don't have that information"
 
@@ -22,5 +23,6 @@ for t in tests:
             key = "wrong_answer"            # blank 2: set key with if / elif / else (see below)
     counts[key] += 1
     print(key, "|", t["q"])
+    time.sleep(4)
 
 print(counts)
