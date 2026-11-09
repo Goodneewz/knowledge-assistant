@@ -22,6 +22,8 @@ for t in tests:
         else:
             key = "wrong_answer"            # blank 2: set key with if / elif / else (see below)
     counts[key] += 1
+    if key not in ("correct_answer", "correct_refusal"):
+        print("   REPLY:", reply)
     print(key, "|", t["q"])
     time.sleep(4)
 
