@@ -13,3 +13,8 @@ Changed v1 to v2 to v3 to v4 eval baseline:
 - v3: first 20-test baseline. 3 false refusals, all retrieval problems.
 - v4: top_k raised from 3 to 5. Fixed "extra to change design." Still failing: "only make cakes" (prompt problem now) and "shop located" (retrieval problem).
 - v5: top_k raised to 15, so all chunks are sent.
+
+| Part of your project	| How it works |
+| search.py - finds chunks |	Meaning. Embeddings compare what the texts mean, not their words |
+| rag.py - writes the answer | Prediction. The AI predicts its reply word by word, guided by your rules and the chunks |
+| eval.py - grades the answer |	Keyword. A literal text match with in, which is crude and exact |
