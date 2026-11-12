@@ -7,7 +7,7 @@
 | v5, k=15 | 13 of 14 | 1 | 0 |
 | v6, k=15 + pizza example | 14 of 14 | 0 | 0 |
 
-Note: results vary 1 test between runs even at temperature 0 (flaky). Shop location fails every run (retrieval).
+Note: results can vary 1 test between runs even at temperature 0 (flaky). Shop location was fixed at v5 (retrieval). "Only make cakes" was flaky until v6.
 
 Changed v1 to v2 to v3 to v4 eval baseline: 
 - v2: rule 3 allows logical conclusions, plus one worked example.
