@@ -6,6 +6,7 @@
 | v4, 20 tests | 13 of 14 | 1 | 0 |
 | v5, k=15 | 13 of 14 | 1 | 0 |
 | v6, k=15 + pizza example | 14 of 14 | 0 | 0 |
+| v7, rule 6 (handoff) | 14 of 14 | 0 | 0 |
 
 Note: results can vary 1 test between runs even at temperature 0 (flaky). Shop location was fixed at v5 (retrieval). "Only make cakes" was flaky until v6.
 
@@ -15,6 +16,7 @@ Changed v1 to v2 to v3 to v4 eval baseline:
 - v4: top_k raised from 3 to 5. Fixed "extra to change design." Still failing: "only make cakes" (prompt problem now) and "shop located" (retrieval problem).
 - v5: top_k raised to 15, so all chunks are sent.Fixed "shop located."
 - v6: added Example 2 (a list can answer "only" questions). Fixed "only make cakes."
+- v7: added rule 6 so exception requests get the standard policy plus a WhatsApp handoff. Checked by hand on the Anambra question.
 
 
 | Part of your project	| How it works |
