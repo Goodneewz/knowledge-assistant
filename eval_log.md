@@ -7,6 +7,7 @@
 | v5, k=15 | 13 of 14 | 1 | 0 |
 | v6, k=15 + pizza example | 14 of 14 | 0 | 0 |
 | v7, rule 6 (handoff) | 14 of 14 | 0 | 0 |
+| v8, 23 tests, rule 6 narrowed | 15 of 15 | 0 | 0 |
 
 Note: results can vary 1 test between runs even at temperature 0 (flaky). Shop location was fixed at v5 (retrieval). "Only make cakes" was flaky until v6.
 
@@ -17,6 +18,8 @@ Changed v1 to v2 to v3 to v4 eval baseline:
 - v5: top_k raised to 15, so all chunks are sent.Fixed "shop located."
 - v6: added Example 2 (a list can answer "only" questions). Fixed "only make cakes."
 - v7: added rule 6 so exception requests get the standard policy plus a WhatsApp handoff. Checked by hand on the Anambra question.
+- v7 (on 23 tests): rule 6 was too broad and caused 1 false answer on the chocolate cake / meat pie question.
+- v8: test set grown from 20 to 23 with 3 questions of your own. Rule 6 narrowed to exceptions the documents address, which fixed that false answer.
 
 
 | Part of your project	| How it works |
