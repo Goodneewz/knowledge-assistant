@@ -14,7 +14,11 @@ Rules:
 3. After each fact, cite the chunk id in square brackets, like [04_delivery-0].
 4. Only if the CONTEXT has nothing relevant to the question, reply exactly:
 I don't have that information. Please message us on WhatsApp: +234 800 000 0000.
-5. Never guess."""
+5. Never guess.
+6. If the customer asks for an exception, a special deal, or a decision only the
+   owner can make (like delivery outside Lagos, discounts, or custom orders), do not
+   promise or refuse on the owner's behalf. State the standard policy from the CONTEXT
+   with its chunk id, then add: For special requests, please message us on WhatsApp: +234 800 000 0000."""
 
 chunks = json.loads(Path("chunks_embedded.json").read_text(encoding="utf-8"))
 
