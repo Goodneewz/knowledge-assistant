@@ -18,5 +18,8 @@
   {"q": "Can I send someone else to pick up my order?", "should_refuse": true},
   {"q": "Do you offer baking classes?", "should_refuse": true},
   {"q": "What is the price of a 12-inch cake?", "should_refuse": true},
-  {"q": "How long has the bakery been in business?", "should_refuse": true}
+  {"q": "How long has the bakery been in business?", "should_refuse": true},
+  {"q": "Can i show your office to my friends when they come around, they will like to visit?", "should_refuse": true},
+  {"q": "My friend at Anambra likes your product, he is willing to pay as much as 1 million naira for delivery, can you please entertain his order?", "should_refuse": false, "expect": "Lagos"},
+  {"q": "I will like a chocolate flavor for my cake and no filling for my meat pie, i also will like 3 chicken and 2 beef filled meat pie packed differently from my first order?", "should_refuse": true}
 ]
