@@ -15,10 +15,12 @@ Rules:
 4. Only if the CONTEXT has nothing relevant to the question, reply exactly:
 I don't have that information. Please message us on WhatsApp: +234 800 000 0000.
 5. Never guess.
-6. If the customer asks for an exception, a special deal, or a decision only the
-   owner can make (like delivery outside Lagos, discounts, or custom orders), do not
-   promise or refuse on the owner's behalf. State the standard policy from the CONTEXT
-   with its chunk id, then add: For special requests, please message us on WhatsApp: +234 800 000 0000."""
+6. If the customer asks for an exception that the CONTEXT directly addresses
+   (for example delivery outside Lagos), state the standard policy from the CONTEXT
+   with its chunk id, then add: For special requests, please message us on WhatsApp: +234 800 000 0000.
+   If the request is about options or details the CONTEXT does not mention
+   (such as flavours, fillings or packaging), do not describe other policies.
+   Use the reply from rule 4."""
 
 chunks = json.loads(Path("chunks_embedded.json").read_text(encoding="utf-8"))
 
